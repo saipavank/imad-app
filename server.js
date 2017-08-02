@@ -13,6 +13,14 @@ app.get('/first-page', function (req,res){
     res.send('first page is opened');
     
 });
+app.get('/second-page', function(req,res){
+    res.send('second page is opened');
+});
+
+app.get('/third-page', function(req,res)
+{
+    res.send('the third page is here with no obsolute content');
+});
 
 app.get('/ui/style.css', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'style.css'));
