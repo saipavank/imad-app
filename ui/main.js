@@ -8,7 +8,7 @@
          if(request.readystate === XMLHttp.DONE)
          {
              if(request.status === 200){
-                 var counter = request.Responsetext;
+                 var counter = request.responsetext;
                   var span = document.getElementById('count');
                   span.innerHTML= counter.toString();
                  
